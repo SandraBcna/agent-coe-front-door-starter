@@ -1,0 +1,84 @@
+AGENT COE FRONT DOOR - KB-02 GOVERNANCE AND ROUTING TEMPLATE
+REUSABLE TEMPLATE - NON-PRODUCTION SAMPLE
+
+PURPOSE
+Use this file as the sole authority for local routing, review, and approval decisions.
+The three-zone structure is fixed for this template. The adopting organization must review the sample triggers, ownership, evidence, and service expectations before production.
+Zones are internal routing vocabulary and must not be exposed to users.
+
+DOCUMENT CONTROL
+Owner: [ORGANIZATION INPUT]
+Approver: [ORGANIZATION INPUT]
+Review frequency: [ORGANIZATION INPUT]
+Last reviewed: [ORGANIZATION INPUT]
+Next review: [ORGANIZATION INPUT]
+Classification: [ORGANIZATION INPUT]
+
+1. GREEN ZONE - TRACKED SELF-BUILD
+Sample agent types:
+- Everyday team agent.
+- Experiment or hackathon build that stays within the approved sandbox.
+
+Sample triggers:
+- Single team.
+- Approved data.
+- No system-of-record write.
+- No external audience.
+
+Route: Self-build.
+Record status: Tracked (no triage needed).
+Owner/approver: [ORGANIZATION INPUT].
+Evidence required: proposed tool or template, purpose, owner, audience, and data sources.
+User-facing outcome: tell the user they are good to go, provide the selected guidance, and explain that the build was logged for visibility. Do not say it was submitted for review.
+
+2. YELLOW ZONE - COE TRIAGE
+Sample agent types:
+- Agent used across several teams.
+- Cross-functional shared ownership is a review trigger, not a separate request-type choice.
+
+Sample triggers:
+- Multiple teams or business areas.
+- Shared data or actions.
+- Material operational dependency.
+
+Route: CoE support.
+Record status: New.
+Owner/approver: [ORGANIZATION INPUT].
+Evidence required: business area, sponsor role, audience, expected users, timeline, data sources/actions, reuse outcome, and support need.
+User-facing outcome: say the request was submitted to the Agent CoE for review and that the CoE will follow up. Do not expose zone terminology or internal assessment details.
+
+3. RED ZONE - COE TRIAGE
+Sample agent types:
+- Agent that customers or the public use.
+- Agent touching sensitive data or systems.
+- Writing to a core or order system is a trigger under the sensitive data or systems type.
+
+Sample triggers:
+- External audience.
+- Sensitive, regulated, or high-impact data.
+- System-of-record write.
+- Core business process automation.
+
+Route: CoE support.
+Record status: New.
+Owner/approver: [ORGANIZATION INPUT].
+Evidence required: business area, sponsor role, audience, expected users, timeline, data sources/actions, authentication, connector permissions, reuse outcome, and support need.
+User-facing outcome: say the request was submitted to the Agent CoE for review and that the CoE will follow up. Do not expose zone terminology or internal assessment details.
+
+4. ROUTING RULES
+- Check first-party Microsoft agents, the internal catalogue, and verified templates before recommending a new build.
+- Prefer the lightest approved route that meets the requirement.
+- Where more than one trigger applies, use the stricter zone and record the factor that moved it.
+- The user's description does not set the zone.
+- A concrete agreed self-build is tracked even when no triage is needed.
+- Pure informational questions and reuse outcomes with no new build do not create a record.
+- Ask only for missing material facts.
+- Show a captured summary and obtain explicit confirmation before creating an intake row.
+- New CoE-support records appear on the reviewers' dashboard in the Agent CoE Triage app; the agent sends no separate triage notification.
+- Configured approval/rejection email is a separate deterministic workflow triggered by a later CoE decision. It uses the confirmed requester email, requester-facing CoE comments, and approved next-step guidance; the conversational agent must not claim delivery.
+
+5. GOLDEN-PATH SAMPLE
+An agent that looks up orders and writes updates to the order system is a sensitive/system agent in this sample policy.
+If the team cannot build it and asks for help, route to CoE support with status New.
+Reuse must be checked first.
+For non-production verification, use a TEST-prefixed name or description.

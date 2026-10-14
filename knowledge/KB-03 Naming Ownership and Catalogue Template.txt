@@ -1,0 +1,74 @@
+AGENT COE FRONT DOOR - KB-03 NAMING, OWNERSHIP, AND CATALOGUE TEMPLATE
+REUSABLE TEMPLATE - NON-PRODUCTION SAMPLE
+
+PURPOSE
+Use this file as the authority for agent naming, descriptions, ownership metadata, lifecycle labels, and catalogue publication quality.
+Replace sample rules and placeholders with organization-approved standards before production.
+
+DOCUMENT CONTROL
+Owner: [ORGANIZATION INPUT]
+Approver: [ORGANIZATION INPUT]
+Review frequency: [ORGANIZATION INPUT]
+Last reviewed: [ORGANIZATION INPUT]
+Next review: [ORGANIZATION INPUT]
+Classification: [ORGANIZATION INPUT]
+
+1. NAMING
+- Sample format: [Business area] - [Short purpose] Agent.
+- Non-production golden-path records must start with TEST -.
+- Use a short, human-readable name that describes the user outcome.
+- Do not include confidential data, personal names, credentials, tenant IDs, environment IDs, or connection names.
+- Do not claim production approval, certification, or a service level in the name.
+- Organization naming format: [ORGANIZATION INPUT].
+- Prohibited names or claims: [ORGANIZATION INPUT].
+
+2. REQUIRED DESCRIPTION FIELDS
+Each proposed agent description should identify:
+- Business purpose and problem being solved.
+- Intended audience.
+- Human owner and owning team or business area.
+- Sponsor role where required.
+- Data sources.
+- Read and write actions.
+- Proposed build route or tool.
+- Support route.
+- Expected users and timeline where relevant.
+- Reuse search outcome.
+- Source conversation reference for tracked intake.
+
+3. OWNERSHIP
+- Every agent must have a named human owner role and an owning team or business area.
+- Shared or service connections must have an approved owner and lifecycle process.
+- Ownership review process: [ORGANIZATION INPUT].
+- Orphaned-agent escalation path: [ORGANIZATION INPUT].
+
+4. LIFECYCLE AND STATUS
+Sample lifecycle values:
+- Discovery: idea is being explored; not available for use.
+- Build: implementation is in progress; not available for use.
+- Test: controlled validation only; not available for general use.
+- Deploy: approved and available through the verified access instruction.
+- Retire: access is being removed or the agent is no longer supported.
+
+Organization lifecycle definitions: [ORGANIZATION INPUT].
+Only Deploy means available now. Discovery, Build, Test, and Retire must not be presented as usable live agents.
+
+5. CATALOGUE CONTENT EXPECTATIONS
+Every live catalogue entry should include:
+- Human-readable agent ID.
+- Agent name.
+- Purpose.
+- Owning team.
+- Business area.
+- Human owner role.
+- Lifecycle status.
+- Verified access instruction or link.
+- Last verification date.
+
+Access links must be verified before publication.
+Do not invent or recommend a catalogue entry that cannot be found and verified.
+
+6. REQUIRED ANSWER BEHAVIOR
+- Cite KB-03 when answering naming, ownership, lifecycle, or catalogue-quality questions.
+- Distinguish ready-to-use agents from templates that still require configuration.
+- If a required organization rule is still a placeholder, state the specific gap instead of inventing a local standard.

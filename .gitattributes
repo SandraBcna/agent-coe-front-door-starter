@@ -1,0 +1,3 @@
+# Preserve exported Power Platform solution bytes.
+source/** -text
+*.zip binary

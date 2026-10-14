@@ -1,0 +1,57 @@
+AGENT COE FRONT DOOR - KB-01 LICENSING AND CAPACITY TEMPLATE
+REUSABLE TEMPLATE - NON-PRODUCTION SAMPLE
+
+PURPOSE
+Use this file as the single authority for licensing and capacity answers.
+Replace sample statements with current, organization-approved policy before production.
+Product availability in the user interface is not proof of entitlement.
+
+DOCUMENT CONTROL
+Owner: [ORGANIZATION INPUT]
+Approver: [ORGANIZATION INPUT]
+Review frequency: [ORGANIZATION INPUT]
+Last reviewed: [ORGANIZATION INPUT]
+Next review: [ORGANIZATION INPUT]
+Classification: [ORGANIZATION INPUT]
+Licensing contact: [ORGANIZATION LICENSING CONTACT]
+
+1. MICROSOFT 365 COPILOT CHAT AND AGENT BUILDER
+- Creating and using an agent in Microsoft 365 Copilot Chat depends on the user's assigned Microsoft 365 and Copilot entitlements, tenant enablement, supported knowledge and actions, and current Microsoft Product Terms.
+- Agent Builder can be used for supported Microsoft 365 Copilot Chat scenarios when enabled for the user.
+- Capabilities that use Copilot Studio, premium connectors, autonomous operation, or other premium features can require separate licensing and Copilot Credits.
+- For a specific person, ask the tenant licensing administrator to confirm assigned licences and local enablement.
+- Organization approval path: [ORGANIZATION INPUT].
+
+2. COPILOT STUDIO
+- Authors require Copilot Studio author access. A trial is suitable for evaluation but is not a production publishing plan.
+- Runtime generative orchestration, knowledge, and tools consume Copilot Credits according to current metering.
+- Capacity must be allocated to the environment or covered by an approved pay-as-you-go plan.
+- Permitted publishing environments: [ORGANIZATION INPUT].
+- Capacity owner and monitoring process: [ORGANIZATION INPUT].
+- Do not promise a price, credit quantity, or entitlement from this template.
+
+3. POWER APPS AND DATAVERSE
+- Users of the Agent CoE Triage model-driven app need Power Apps Premium, eligible Dynamics 365 seeded rights, an existing per-app entitlement, or approved pay-as-you-go, plus an appropriate Dataverse security role.
+- Catalogue readers, intake submitters, and triage users should receive separate least-privilege roles where practical.
+- Dataverse storage and request capacity owner: [ORGANIZATION INPUT].
+- Microsoft 365 seeded rights do not generally cover standalone custom Dataverse apps, premium flows, or Copilot Studio agents.
+
+4. CONNECTORS AND CHANNELS
+- Dataverse connection owners need the connector rights and permissions required by each tool.
+- Approved Dataverse connection identity for the agent: [ORGANIZATION INPUT].
+- Premium and custom connector policy: [ORGANIZATION INPUT].
+- DLP policy and prohibited connector combinations: [ORGANIZATION INPUT].
+- Approval/rejection email flow owners and the approved Outlook sender mailbox need the required Power Automate, Dataverse, and Outlook entitlements and permissions. Confirm the actual licensing and DLP requirements with the organization's administrator.
+
+5. REQUIRED ANSWER BEHAVIOR
+- Answer only the user's immediate licensing question.
+- Cite the relevant section of KB-01.
+- Cover authoring and runtime when asked about creating and using an agent.
+- State that this reusable template does not prove the user's local entitlement.
+- If this file is silent or stale, state the specific gap and direct the user to the licensing contact.
+- Do not create an intake record for a pure licensing question.
+
+PUBLIC REFERENCES
+- Copilot Studio licensing and access: https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions
+- Power Platform licensing overview: https://learn.microsoft.com/power-platform/admin/pricing-billing-skus
+- Copilot Credits capacity: https://learn.microsoft.com/power-platform/admin/manage-copilot-studio-copilot-credits-capacity
